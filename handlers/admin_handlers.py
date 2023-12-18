@@ -5,7 +5,7 @@ import aiogram
 from aiogram import Router, F
 from aiogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup, FSInputFile
 from services.price_monitor import monitoring
-from database.database import users_db, users_items, users_max_items, url_images
+from database.database import users_db, users_items, users_max_items, url_images, save_users_max_items
 from aiogram.filters.callback_data import CallbackData
 from config_data.config import admin_id
 from handlers.currency_handlers import bot

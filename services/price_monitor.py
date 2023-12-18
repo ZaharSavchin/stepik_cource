@@ -1,6 +1,7 @@
 from database.database import users_items, save_users_items
 from services.search_function import get_price, main_search, bot, get_item, get_item_details
 import asyncio
+from config_data.config import admin_id
 
 
 async def monitoring():
@@ -28,5 +29,5 @@ async def monitoring():
             await asyncio.sleep(2)
         loop_counter += 1
         if loop_counter % 5 == 0 or loop_counter == 1:
-            await bot.send_message(chat_id=1042048167, text=f"{loop_counter}")
+            await bot.send_message(chat_id=admin_id, text=f"{loop_counter}")
         await asyncio.sleep(15)

@@ -2,3 +2,7 @@
 venv/
 __pycache__/
 .idea/
+url_images.json
+users_db.json
+users_items.json
+users_max_items.json

@@ -15,7 +15,7 @@ url_images: [int, str] = {}
 users_max_items: [int, int] = {}
 # users_max_items: [int, int] = {5754662958: 1, 6031519620: 3}
 
-r = redis.Redis(host='127.0.0.1', port=6379, db=5)
+r = redis.Redis(host='127.0.0.1', port=6379, db=6)
 
 
 # Получение словаря из Redis
